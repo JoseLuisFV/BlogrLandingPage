@@ -1,6 +1,18 @@
 $font: 'Overpass', 'Ubuntu', sans-serif;
+$bg-header-color: linear-gradient(
+                    135deg, 
+                    hsl(13, 100%, 72%), 
+                    hsl(353, 100%, 62%)
+                    );
+$bg-header-img: url('../images/bg-pattern-intro.svg');
 
 html {
     font-size: 62.5%;
     font-family: $font;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
