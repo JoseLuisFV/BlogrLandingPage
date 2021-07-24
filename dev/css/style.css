@@ -25,4 +25,96 @@ html {
   background-position-y: 30%;
   background-repeat: no-repeat;
 }
+
+.header__top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 28px 18px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__hamburguer-menu {
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.header__bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+}
+
+.header__title-page {
+  margin-bottom: 20px;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.header__description {
+  margin-bottom: 40px;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+  color: whitesmoke;
+}
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.header button {
+  width: 155px;
+  font-size: 1.8rem;
+  padding: 20px 18px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.header__button--start-free {
+  background: white;
+  color: #ff3d54;
+  border: 2px solid white;
+}
+
+.header__button--learn-more {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
