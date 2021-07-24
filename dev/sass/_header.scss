@@ -72,18 +72,31 @@
         padding: 20px 18px;
         border-radius: 50px;
         font-weight: 600;
+        cursor: pointer;
+        transition: all 300ms ease;
     }
 
     &__button--start-free {
         background: white;
-        color: hsl(353, 100%, 62%);
+        color: hsl(356, 100%, 66%);
         border: 2px solid white;
+        &:hover {
+            background-color: hsl(355, 100%, 74%);
+            border: 2px solid hsl(355, 100%, 74%);
+            color: white;
+        }
     }
+    
 
     &__button--learn-more {
         background-color: transparent;
         border: 2px solid white;
         color: white;
+        &:hover {
+            background-color: white;
+            border: 2px solid white;
+            color: hsl(355, 100%, 74%);
+        }
     }
 }
 
