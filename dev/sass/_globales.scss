@@ -5,6 +5,11 @@ $bg-header-color: linear-gradient(
                     hsl(353, 100%, 62%)
                     );
 $bg-header-img: url('../images/bg-pattern-intro.svg');
+$bg-philosophy: linear-gradient(
+                135deg,
+                hsl(237, 17%, 21%),
+                hsl(237, 23%, 32%)
+);
 
 html {
     font-size: 62.5%;

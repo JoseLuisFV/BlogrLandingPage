@@ -184,4 +184,46 @@ body {
 .product p {
   margin-bottom: 40px;
 }
+
+.philosophy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  background: url("../images/bg-pattern-circles.svg"), linear-gradient(135deg, #2c2d3f, #3f4164);
+  background-size: 630px, contain;
+  background-position: center -270px, center center;
+  background-repeat: no-repeat, repeat;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  color: white;
+}
+
+.philosophy__img {
+  position: relative;
+  top: -110px;
+  width: 90%;
+  height: 330px;
+  background-image: url("../images/illustration-phones.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.philosophy__info {
+  position: relative;
+  top: -100px;
+  padding: 0 20px;
+}
+
+.philosophy__title {
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
