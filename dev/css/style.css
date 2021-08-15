@@ -15,6 +15,12 @@ body {
   line-height: 2.9rem;
 }
 
+p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-bottom: 40px;
+}
+
 .header {
   height: 90vh;
   overflow: hidden;
@@ -138,7 +144,7 @@ body {
   color: #ff7a85;
 }
 
-.product {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,19 +160,39 @@ body {
   text-align: center;
 }
 
-.product__title {
+section .product__img,
+section .philosophy__img,
+section .features__img {
+  width: 90%;
+  height: 330px;
+  background-size: cover;
+  background-position: center center;
+}
+
+section .product__title,
+section .philosophy__title {
+  margin-top: 50px;
   margin-bottom: 30px;
-  font-size: 3.0rem;
+  font-size: 3.6rem;
+  line-height: 4.0rem;
+  font-weight: 600;
+}
+
+section .product__subtitle,
+section .philosophy__subtitle,
+section .features__subtitle {
+  margin: 36px 0px 18px;
+  font-size: 2.8rem;
   line-height: 3.2rem;
   font-weight: 600;
 }
 
-.product__image {
-  width: 90%;
-  height: 330px;
+.product__title {
+  color: #1f3f5b;
+}
+
+.product__img {
   background-image: url("../images/illustration-editor-mobile.svg");
-  background-size: cover;
-  background-position: center center;
 }
 
 .product__info {
@@ -174,29 +200,7 @@ body {
   color: #1f3f5b;
 }
 
-.product__subtitle {
-  margin: 36px 0px 18px;
-  font-size: 2.8rem;
-  line-height: 3.2rem;
-  font-weight: 600;
-}
-
-.product p {
-  margin-bottom: 40px;
-}
-
 .philosophy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   margin-top: 100px;
   background: url("../images/bg-pattern-circles.svg"), linear-gradient(135deg, #2c2d3f, #3f4164);
   background-size: 630px, contain;
@@ -210,20 +214,17 @@ body {
 .philosophy__img {
   position: relative;
   top: -110px;
-  width: 90%;
-  height: 330px;
   background-image: url("../images/illustration-phones.svg");
-  background-size: cover;
-  background-position: center center;
 }
 
 .philosophy__info {
   position: relative;
   top: -100px;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
-.philosophy__title {
-  margin-bottom: 20px;
+.features__img {
+  margin-top: 48px;
+  background-image: url("../images/illustration-laptop-mobile.svg");
 }
 /*# sourceMappingURL=style.css.map */

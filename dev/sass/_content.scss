@@ -1,4 +1,4 @@
-.product {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,19 +6,44 @@
     margin-top: 20px;
     text-align: center;
 
-    &__title {
+    & .product__img,
+    & .philosophy__img,
+    & .features__img {
+        width: 90%;
+        height: 330px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    & .product__title,
+    & .philosophy__title {
+        margin-top: 50px;
         margin-bottom: 30px;
-        font-size: 3.0rem;
+        font-size: 3.6rem;
+        line-height: 4.0rem;
+        font-weight: 600;
+    }
+
+    & .product__subtitle,
+    & .philosophy__subtitle, 
+    & .features__subtitle {
+        margin: 36px 0px 18px;
+        font-size: 2.8rem;
         line-height: 3.2rem;
         font-weight: 600;
     }
 
-    &__image {
-        width: 90%;
-        height: 330px;
+}
+
+
+.product {
+
+    &__title {
+        color: hsl(208, 49%, 24%);
+    }
+
+    &__img {
         background-image: url('../images/illustration-editor-mobile.svg');
-        background-size: cover;
-        background-position: center center
     }
 
     &__info {
@@ -26,24 +51,10 @@
         color: hsl(208, 49%, 24%);
     }
 
-    &__subtitle {
-        margin: 36px 0px 18px;
-        font-size: 2.8rem;
-        line-height: 3.2rem;
-        font-weight: 600;
-    }
-
-    & p {
-        margin-bottom: 40px;
-    }
-
 }
 
 .philosophy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    
     margin-top: 100px;
     background: url('../images/bg-pattern-circles.svg'), $bg-philosophy;
     background-size: 630px, contain;
@@ -56,20 +67,20 @@
     &__img {
         position: relative;
         top: -110px;
-        width: 90%;
-        height: 330px;
         background-image: url('../images/illustration-phones.svg');
-        background-size: cover;
-        background-position: center center
     }
 
     &__info {
         position: relative;
         top: -100px;
-        padding: 0 20px;
+        padding: 0 16px;
     }
+}
 
-    &__title {
-        margin-bottom: 20px;
+.features {
+
+    &__img {
+        margin-top: 48px;
+        background-image: url('../images/illustration-laptop-mobile.svg');
     }
 }
