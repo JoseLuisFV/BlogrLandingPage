@@ -2,5 +2,17 @@
     padding: 48px 0px;
     text-align: center;
     background-color: hsl(237, 17%, 21%);
+    border-top-right-radius: 120px;
     color: white;
+
+    & .list-container {
+        margin-top: 40px;
+    }
+
+    & .list__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 2.0rem;
+        list-style: none;
+    }
 }
