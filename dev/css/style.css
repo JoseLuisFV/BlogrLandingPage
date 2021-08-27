@@ -22,22 +22,16 @@ p {
 }
 
 .header {
-  height: 90vh;
-  overflow: hidden;
-  background: linear-gradient(135deg, #ff8f70, #ff3d54);
-  border-bottom-left-radius: 120px;
-}
-
-.header__container {
-  height: 100%;
-  background-image: url("../images/bg-pattern-intro.svg");
-  background-size: 1600px 1600px;
-  background-position-x: 36%;
-  background-position-y: 30%;
+  height: 620px;
+  background: url("../images/bg-pattern-intro.svg"), linear-gradient(135deg, #ff8f70, #ff3d54);
+  background-size: 1660px, 100%;
+  background-position: 40% 38%, 0;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 90px;
 }
 
 .header__top-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,20 +41,132 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 120px;
   padding: 28px 18px;
 }
 
+.header figure {
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  height: 40px;
+}
+
 .header__nav {
+  position: absolute;
+  left: 5%;
+  top: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+  width: 90%;
+  padding: 40px 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  font-weight: 1.8rem;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header__nav.close {
   display: none;
 }
 
-.header__hamburguer-menu {
-  width: 50px;
-  height: 50px;
-  background-image: url("../images/icon-hamburger.svg");
+.header__nav.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .list-container {
+  width: 250px;
+}
+
+.header .list-container .list__title {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 2.0rem;
+  color: #2c2d3f;
+  list-style: none;
+  vertical-align: middle;
+}
+
+.header .list-container .list__title span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icon-arrow-dark.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.header .list-container[open] .list__title span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header .list-container .list {
+  width: 100%;
+  padding: 18px 0;
+  color: #2c2d3f;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.header .list-container .list__item {
+  line-height: 3.2rem;
+}
+
+.header .list-container[open] .list {
+  color: #4b5862;
+}
+
+.header .header__button--login {
+  background-color: transparent;
+  border-color: transparent;
+  color: #2c2d3f;
+  font-weight: 600;
+  font-size: 2.0rem;
+  padding: 10px 14px;
+}
+
+.header .header__button--sign-up {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(90deg, #ff8f70, #ff3d54);
+  border: 0px solid transparent;
+}
+
+.header__menu {
+  width: 40px;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+}
+
+.header__menu.hamburguer {
+  background-image: url("../images/icon-hamburger.svg");
+}
+
+.header__menu.close {
+  background-image: url("../images/icon-close.svg");
 }
 
 .header__bottom-container {
@@ -111,8 +217,8 @@ p {
 
 .header button {
   width: 155px;
-  font-size: 1.8rem;
-  padding: 20px 18px;
+  font-size: 1.7rem;
+  padding: 14px 18px;
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;

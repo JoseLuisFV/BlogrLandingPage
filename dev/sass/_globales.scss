@@ -1,9 +1,24 @@
+$bg-footer-color: hsl(240, 10%, 16%);
+$text-footer-color: hsl(240, 2%, 79);
+
+$body-copy: hsl(207, 13%, 34%);
+
+$primary-tone-very-light: hsl(13, 100%, 72%);
+$primary-tone-light: hsl(353, 100%, 62%);
+
+
+$secondary-tone: hsl(237, 17%, 21%);
+$secondary-tone-desaturated: hsl(237, 23%, 32%);
+
+
+
 $font: 'Overpass', 'Ubuntu', sans-serif;
 $bg-header-color: linear-gradient(
                     135deg, 
                     hsl(13, 100%, 72%), 
                     hsl(353, 100%, 62%)
                     );
+                    
 $bg-header-img: url('../images/bg-pattern-intro.svg');
 $bg-philosophy: linear-gradient(
                 135deg,
