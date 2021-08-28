@@ -1,5 +1,6 @@
 @import "./globales";
 
+// header styles
 .header {
     height: 560px;
     background: $bg-header-img,
@@ -36,7 +37,7 @@
         flex-direction: row;
         justify-content: flex-start;
         gap: 10px;
-        width: 85%;
+        flex-basis: auto;
         padding: 0px 0px;
         margin: 0 0;
         text-align: center;
@@ -96,4 +97,41 @@
         color: $primary-tone-light;
         background: white;
     }
+}
+
+// content styles 
+
+
+section {
+    margin-top: 80px;
+}
+
+.product {
+    &__info {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 884px;
+        width: 90%;
+        max-width: 1340px;
+        height: 520px;
+
+        & .wrapper {
+            width: 50%;
+            max-width: 560px;
+            text-align: left;
+        }
+    }
+
+    section &__img {
+        position: absolute;
+        right: -20%;
+        width: 58%;
+        min-width: 600px;
+        height: 885px;
+        background: url('../images/illustration-editor-desktop.svg');
+        background-position: left center;
+    }
+
 }

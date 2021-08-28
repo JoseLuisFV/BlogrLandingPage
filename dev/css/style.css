@@ -250,6 +250,10 @@ p {
   color: #ff7a85;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +275,7 @@ section .philosophy__img,
 section .features__img {
   width: 90%;
   height: 330px;
+  margin: 0 auto;
   background-size: cover;
   background-position: center center;
 }
