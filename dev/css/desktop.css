@@ -22,10 +22,10 @@ p {
 }
 
 .header {
-  height: 450px;
-  background: url("../images/bg-pattern-intro.svg"), linear-gradient(135deg, #ff8f70, #ff3d54);
-  background-size: 1660px, 100%;
-  background-position: 40% 38%, 0;
+  height: 560px;
+  background: url("../images/bg-pattern-intro.svg"), linear-gradient(95deg, #ff8f70, #ff3d54);
+  background-size: 200% auto, 100%;
+  background-position: 25% 51%, 0;
   background-repeat: no-repeat;
   border-bottom-left-radius: 90px;
 }
@@ -47,7 +47,7 @@ p {
 }
 
 .header__title-page {
-  font-size: 4.0rem;
+  font-size: 4.6rem;
 }
 
 .header__nav.close, .header__nav.open {
@@ -67,7 +67,6 @@ p {
   padding: 0px 0px;
   margin: 0 0;
   text-align: center;
-  font-weight: 400;
   font-weight: 1.6rem;
   background-color: transparent;
   border-radius: 10px;
@@ -75,42 +74,28 @@ p {
           box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 }
 
-.header .header__button--login {
-  margin-left: auto;
-  margin-right: 20px;
-}
-
-.header .header__button--sign-up {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .header .list-container {
   position: relative;
   width: auto;
+  margin-right: 8px;
 }
 
 .header .list-container .list__title {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 2.0rem;
-  color: #2c2d3f;
-  list-style: none;
-  vertical-align: middle;
+  color: white;
+  opacity: 0.80;
+  cursor: pointer;
 }
 
 .header .list-container .list__title span {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url("../images/icon-arrow-dark.svg");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  background-image: url("../images/icon-arrow-light.svg");
+}
+
+.header .list-container .list__title:hover {
+  text-decoration: underline;
+  opacity: 1;
 }
 
 .header .list-container .list {
@@ -125,5 +110,18 @@ p {
 
 .header__menu {
   display: none;
+}
+
+.header .header__button--login {
+  margin-left: auto;
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header .header__button--sign-up {
+  margin-left: 0;
+  margin-right: 0;
+  color: #ff3d54;
+  background: white;
 }
 /*# sourceMappingURL=desktop.css.map */
