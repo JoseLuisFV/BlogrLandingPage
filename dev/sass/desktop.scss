@@ -1,0 +1,93 @@
+@import "./globales";
+
+.header {
+    height: 450px;
+    background: $bg-header-img, $bg-header-color;
+    background-size: 1660px, 100%;
+    background-position: 40% 38%, 0;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 90px;
+
+    &__top-container {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        gap: 65px;
+        width: 100%;
+        max-width: 1250px;
+        height: 130px;
+        padding: 28px 40px;
+        margin: 0 auto;
+    }
+
+    &__title-page {
+        font-size: 4.0rem;
+    }
+
+    &__nav.close,
+    &__nav.open  {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 85%;
+        padding: 0px 0px;
+        margin: 0 0;
+        text-align: center;
+        font-weight: 400;
+        font-weight: 1.6rem;
+        background-color: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    & .header__button--login {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    & .header__button--sign-up {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    & .list-container {
+        position: relative;
+        width: auto;
+
+        & .list__title {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 2.0rem;
+            color: $secondary-tone;
+            list-style: none;
+            vertical-align: middle;
+    
+            & span {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background-image: url('../images/icon-arrow-dark.svg');
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                transition: transform 0.4s ease-in-out;
+            }
+        }
+
+        & .list {
+            position: absolute;
+            top: 50px;
+            left: calc(50% - 95px);
+            width: 170px;
+            padding: 12px 0px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+
+    &__menu {
+        display: none;
+    }
+}

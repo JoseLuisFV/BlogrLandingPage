@@ -1,0 +1,129 @@
+html {
+  font-size: 62.5%;
+  font-family: "Overpass", "Ubuntu", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-bottom: 40px;
+}
+
+.header {
+  height: 450px;
+  background: url("../images/bg-pattern-intro.svg"), linear-gradient(135deg, #ff8f70, #ff3d54);
+  background-size: 1660px, 100%;
+  background-position: 40% 38%, 0;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 90px;
+}
+
+.header__top-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 65px;
+  width: 100%;
+  max-width: 1250px;
+  height: 130px;
+  padding: 28px 40px;
+  margin: 0 auto;
+}
+
+.header__title-page {
+  font-size: 4.0rem;
+}
+
+.header__nav.close, .header__nav.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  width: 85%;
+  padding: 0px 0px;
+  margin: 0 0;
+  text-align: center;
+  font-weight: 400;
+  font-weight: 1.6rem;
+  background-color: transparent;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header .header__button--login {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.header .header__button--sign-up {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header .list-container {
+  position: relative;
+  width: auto;
+}
+
+.header .list-container .list__title {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 2.0rem;
+  color: #2c2d3f;
+  list-style: none;
+  vertical-align: middle;
+}
+
+.header .list-container .list__title span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icon-arrow-dark.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.header .list-container .list {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 95px);
+  width: 170px;
+  padding: 12px 0px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header__menu {
+  display: none;
+}
+/*# sourceMappingURL=desktop.css.map */
