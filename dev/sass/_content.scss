@@ -14,6 +14,7 @@ section {
     & .philosophy__img,
     & .features__img {
         width: 90%;
+        min-width: 310px;
         height: 330px;
         margin: 0 auto;
         background-size: cover;
@@ -71,7 +72,6 @@ section {
 
     &__img {
         position: relative;
-        top: -110px;
         background-image: url('../images/illustration-phones.svg');
     }
 

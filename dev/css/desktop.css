@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-size: 1.7rem;
   line-height: 2.9rem;
 }
@@ -162,5 +163,45 @@ section .product__img {
   height: 885px;
   background: url("../images/illustration-editor-desktop.svg");
   background-position: left center;
+}
+
+.philosophy {
+  height: 510px;
+  margin-top: 180px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: 1100px, contain;
+  background-position: -240px -580px, center center;
+  background-repeat: no-repeat, repeat;
+}
+
+.philosophy__info {
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.philosophy__info .wrapper {
+  text-align: left;
+  width: 50%;
+  max-width: 600px;
+}
+
+section .philosophy__img {
+  position: relative;
+  top: 10px;
+  left: -60px;
+  width: 65%;
+  min-width: 600px;
+  max-width: 680px;
+  height: 700px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=desktop.css.map */
