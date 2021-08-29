@@ -170,3 +170,73 @@ section {
         background-repeat: no-repeat;
     }
 }
+
+
+.features {
+    margin-top: 110px;
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+        & .wrapper {
+            position: relative;
+            left: -14%;
+            width: 62%;
+            max-width: 670px;
+            text-align: left;
+        }
+    }
+
+    section &__img {
+        position: relative;
+        left: -18%;
+        height: 800px;
+
+        margin-top: 0;
+        background: url('../images/illustration-laptop-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+section {
+    & .product__title, 
+    & .philosophy__title, 
+    & .features__subtitle {
+        opacity: 0;
+        transition: opacity 300ms ease-in, transform 300ms ease-in;
+    }
+
+    & .product__subtitle {
+        opacity: 0;
+        transition: opacity 300ms ease-in;
+        transition-delay: 200ms;
+    }
+
+    p {
+        opacity: 0;
+        transition: transform 400ms ease-in, opacity 400ms ease-in;
+        transition-delay: 300ms;
+    }
+}
+
+section:hover {
+    & .product__title, 
+    & .philosophy__title, 
+    & .features__subtitle {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    & .product__subtitle {
+        opacity: 1;
+    }
+
+    & p {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}

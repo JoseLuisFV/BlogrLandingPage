@@ -204,4 +204,86 @@ section .philosophy__img {
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
+
+.features {
+  margin-top: 110px;
+}
+
+.features__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.features__info .wrapper {
+  position: relative;
+  left: -14%;
+  width: 62%;
+  max-width: 670px;
+  text-align: left;
+}
+
+section .features__img {
+  position: relative;
+  left: -18%;
+  height: 800px;
+  margin-top: 0;
+  background: url("../images/illustration-laptop-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+section .product__title,
+section .philosophy__title,
+section .features__subtitle {
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in, -webkit-transform 300ms ease-in;
+  transition: opacity 300ms ease-in, -webkit-transform 300ms ease-in;
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+  transition: opacity 300ms ease-in, transform 300ms ease-in, -webkit-transform 300ms ease-in;
+}
+
+section .product__subtitle {
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+section p {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 400ms ease-in, -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in, opacity 400ms ease-in;
+  transition: transform 400ms ease-in, opacity 400ms ease-in, -webkit-transform 400ms ease-in;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+section:hover .product__title,
+section:hover .philosophy__title,
+section:hover .features__subtitle {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section:hover .product__subtitle {
+  opacity: 1;
+}
+
+section:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=desktop.css.map */
