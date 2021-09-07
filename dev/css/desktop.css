@@ -286,4 +286,29 @@ section:hover p {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 110px;
+}
+
+.footer .list-container {
+  margin-top: 0;
+}
+
+.footer .list__title {
+  list-style: none;
+}
+
+.footer ul {
+  list-style-type: none;
+}
 /*# sourceMappingURL=desktop.css.map */

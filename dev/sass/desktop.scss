@@ -240,3 +240,24 @@ section:hover {
         transform: scale(1.1);
     }
 }
+
+
+// footer
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 110px;
+
+    & .list-container {
+        margin-top: 0;
+    }
+
+    & .list__title {
+        list-style: none;
+    }
+    & ul {
+        list-style-type: none;
+    }
+}
